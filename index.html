@@ -9,23 +9,75 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="icon" href="icons/title.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" <link rel="icon" href="icons/title.png" type="image/x-icon" />
   <title>Goal Tracker</title>
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
-        <button type="button" class="btn btn-danger">Get Started</button>
+      <button type="button" class="btn btn-danger">Get Started</button>
     </div>
   </nav>
 
 
+  <div id="mainslide" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainslide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainslide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mainslide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/first.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+         
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/second.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+          <p>Consistency is one of the biggest factors to accomplishment and success.” – Byron Pulsifer</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/third.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p>The key to success is consistency. And right now, the only way for you to actually take action is to believe in yourself.” – Zak Frazer</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainslide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainslide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue fixed-bottom bg-dark" id="fo">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="/">Agent47</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
