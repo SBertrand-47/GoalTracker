@@ -9,14 +9,17 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css" <link rel="icon" href="icons/title.png" type="image/x-icon" />
+  <link rel="icon" href="icons/title.png" type="image/x-icon" />
   <title>Goal Tracker</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
-      <button type="button" class="btn btn-danger">Get Started</button>
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       Log In
+    </button>
+      <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#RegisterModal"> Register</button>
     </div>
   </nav>
 
@@ -60,21 +63,20 @@
 <!-- End of Image Slide-->
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-4 col-sm-12 col-xs-12">
 
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">Why is Consistency Important?</h5>
         <h6 class="card-subtitle mb-2 text-muted">It develops discipline and self-control</h6>
         <p class="card-text">Forming a new habit can be challenging because it’s easier to go back to what you’re comfortable with. </p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+    
       </div>
 
     </div>
 
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4 col-sm-12  col-xs-12">
 
     <div class="card" style="width: 18rem;">
       <div class="card-body">
@@ -82,13 +84,12 @@
         <h6 class="card-subtitle mb-2 text-muted">It builds a higher level of trust.</h6>
         <p class="card-text">The level of trust you have with yourself shows up in the level of trust others have with you. Being consistent will help build momentum. 
           This means you’ll also feel good about what you’re working towards.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        
       </div>
     </div>
 
   </div>
-  <div class="col-md-3">
+  <div class="col-md-4 col-sm-12 col-xs-12">
 
     <div class="card" style="width: 18rem;">
       <div class="card-body">
@@ -96,8 +97,7 @@
         <h6 class="card-subtitle mb-2 text-muted">It will create accountability</h6>
         <p class="card-text">Your results will reveal if you’re consistent or not. If you know you’re not on track, you can hold yourself accountable. 
           This means you can adjust your actions or behaviours and keep progressing towards what you want.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        
       </div>
     
     </div>
@@ -105,8 +105,55 @@
   </div>
 </div>
 
+<div class="container">
+  <!-- Login Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log In Page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="username" placeholder="Username"/>
+          <input type="password" name="username" placeholder="Password"/>
+          <button class="btn btn-warning">Log In</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<!-- End of Login Modal-->
 
+<!-- Register Modal-->
 
+<div class="container">
+  <!-- Login Modal -->
+  <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log In Page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="username" placeholder="Username"/>
+          <input type="password" name="username" placeholder="Password"/>
+          <button class="btn btn-warning">Log In</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End Of Register Modal-->
 
 
 
@@ -116,7 +163,7 @@
   <footer class="page-footer font-small blue fixed-bottom bg-dark" id="fo">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2022 Copyright:
-      <a href="/">Agent47</a>
+      <a href="#">Agent47</a>
     </div>
     <!-- Copyright -->
   </footer>
